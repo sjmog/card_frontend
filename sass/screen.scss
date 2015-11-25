@@ -1,0 +1,132 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300|Fjalla+One);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.cards {
+  padding-top: 65px;
+  height: 100vh;
+  width: 100vw;
+  overflow: scroll;
+}
+
+.card {
+  position: relative;
+  width: 390px;
+  height: 490px;
+  padding-top: 65px;
+  margin: 0 auto;
+  margin-bottom: 65px;
+  text-align: center;
+  background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%), url('../images/card_bg.jpg'); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%), url('../images/card_bg.jpg'); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%), url('../images/card_bg.jpg'); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+  background-size: cover;
+  background-position: center center;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px 3px rgba(0,0,0,0.1);
+  &:before {
+    position: relative;
+    content: "";
+    top: -50px;
+    margin: 0 auto;
+    display: block;
+    background: grey;
+    height: 20px;
+    width: 85px;
+    border-radius: 20px;
+    box-shadow: inset 0 4px 10px 3px rgba(0,0,0,0.1);
+  }
+}
+
+.avatar {
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+  border-radius: 100%;
+  overflow: hidden;
+  border: 3px solid white;
+}
+
+.avatar img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.card__avatar {
+  margin-bottom: 25px;
+}
+
+.card__name {
+  font-size: 2.4em;
+  margin-bottom: 25px;
+}
+
+.cohort {
+  text-align: center;
+  color: #ddd;
+  opacity: 0.4;
+  position: relative;
+  font-size: 1.4em;
+  margin-bottom: 65px;
+  &:before, &:after {
+    content: "";
+    position: absolute;
+    background: #ddd;
+    height: 2px;
+    width: 30%;
+    top: 0.45em;
+  }
+  &:before {
+    left: 0;
+  }
+  &:after {
+    right: 0;
+  }
+}
+
+.card__cohort {
+  color: white;
+  opacity: 1;
+  margin-bottom: 25px;
+  &:before, &:after {
+    background: white;
+  }
+}
+
+.card__details {
+  p {
+    font-size: 1.2em;
+    margin-bottom: 12px;
+    &:before {
+      content: "{";
+      padding-right: 0.5em;
+    }
+    &:after {
+      content: "}";
+      padding-left: 0.5em;
+    }
+  }
+}
+

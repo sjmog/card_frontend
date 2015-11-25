@@ -1,0 +1,218 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300|Fjalla+One);
+/* line 5, ../../../../../../../Users/Sam/.rvm/gems/ruby-2.2.2/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../Users/Sam/.rvm/gems/ruby-2.2.2/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../Users/Sam/.rvm/gems/ruby-2.2.2/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../Users/Sam/.rvm/gems/ruby-2.2.2/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../Users/Sam/.rvm/gems/ruby-2.2.2/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../Users/Sam/.rvm/gems/ruby-2.2.2/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../Users/Sam/.rvm/gems/ruby-2.2.2/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../Users/Sam/.rvm/gems/ruby-2.2.2/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../Users/Sam/.rvm/gems/ruby-2.2.2/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 9, ../sass/screen.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 13, ../sass/screen.scss */
+body {
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, transparent 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, transparent 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, transparent 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
+  /* IE6-9 */
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/* line 22, ../sass/screen.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fjalla One', sans-serif;
+}
+
+/* line 26, ../sass/screen.scss */
+.cards {
+  padding-top: 65px;
+  height: 100vh;
+  width: 100vw;
+  overflow: scroll;
+}
+
+/* line 33, ../sass/screen.scss */
+.card {
+  position: relative;
+  width: 390px;
+  height: 490px;
+  padding-top: 65px;
+  margin: 0 auto;
+  margin-bottom: 65px;
+  text-align: center;
+  background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 100%), url("../images/card_bg.jpg");
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 100%), url("../images/card_bg.jpg");
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.65) 100%), url("../images/card_bg.jpg");
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
+  /* IE6-9 */
+  background-size: cover;
+  background-position: center center;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px 3px rgba(0, 0, 0, 0.1);
+}
+/* line 49, ../sass/screen.scss */
+.card:before {
+  position: relative;
+  content: "";
+  top: -50px;
+  margin: 0 auto;
+  display: block;
+  background: grey;
+  height: 20px;
+  width: 85px;
+  border-radius: 20px;
+  box-shadow: inset 0 4px 10px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* line 63, ../sass/screen.scss */
+.avatar {
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+  border-radius: 100%;
+  overflow: hidden;
+  border: 3px solid white;
+}
+
+/* line 72, ../sass/screen.scss */
+.avatar img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+/* line 77, ../sass/screen.scss */
+.card__avatar {
+  margin-bottom: 25px;
+}
+
+/* line 81, ../sass/screen.scss */
+.card__name {
+  font-size: 2.4em;
+  margin-bottom: 25px;
+}
+
+/* line 86, ../sass/screen.scss */
+.cohort {
+  text-align: center;
+  color: #ddd;
+  opacity: 0.4;
+  position: relative;
+  font-size: 1.4em;
+  margin-bottom: 65px;
+}
+/* line 93, ../sass/screen.scss */
+.cohort:before, .cohort:after {
+  content: "";
+  position: absolute;
+  background: #ddd;
+  height: 2px;
+  width: 30%;
+  top: 0.45em;
+}
+/* line 101, ../sass/screen.scss */
+.cohort:before {
+  left: 0;
+}
+/* line 104, ../sass/screen.scss */
+.cohort:after {
+  right: 0;
+}
+
+/* line 109, ../sass/screen.scss */
+.card__cohort {
+  color: white;
+  opacity: 1;
+  margin-bottom: 25px;
+}
+/* line 113, ../sass/screen.scss */
+.card__cohort:before, .card__cohort:after {
+  background: white;
+}
+
+/* line 119, ../sass/screen.scss */
+.card__details p {
+  font-size: 1.2em;
+  margin-bottom: 12px;
+}
+/* line 122, ../sass/screen.scss */
+.card__details p:before {
+  content: "{";
+  padding-right: 0.5em;
+}
+/* line 126, ../sass/screen.scss */
+.card__details p:after {
+  content: "}";
+  padding-left: 0.5em;
+}
